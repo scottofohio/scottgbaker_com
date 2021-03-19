@@ -1,0 +1,136 @@
+.site-header {
+  background: $primary;
+  position: relative;
+  overflow: hidden;
+
+  padding: 20px 0 0 0;
+
+  @include media-breakpoint-up(lg) {
+    padding: 0;
+  }
+
+  .hamburger {
+
+    right: 20px;
+    top: 10px;
+    top: 15px;
+    border: none;
+   
+
+    font-size: 1rem;
+    @extend .button;
+  }
+
+  @include media-breakpoint-up(lg) {
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      max-width: 170px;
+      flex: 0 0 170px;
+      -ms-flex: 0 0 170px;
+    
+    }
+
+    nav {
+      max-width: 70%;
+      flex: 0 0 70%;
+      -ms-flex: 0 0 70%;
+    }
+
+    .hamburger {
+      display: none;
+    }
+
+  }
+
+  .logo {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: $background;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+
+  nav {
+    display: none;
+
+    &.active {
+      display: block;
+      padding-top: 20px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      display: flex;
+    }
+
+    // padding-left: 
+
+    >a {
+      display: block;
+      padding: 15px 20px;
+      font-size: $font-family-base;
+      color: $background;
+      font-family: $header-font-alternate;
+      
+      text-decoration: none;
+      letter-spacing: 1px;
+      font-weight: 500;
+    }
+
+  }
+
+  .search {
+    position: relative;
+    width: 100%;
+
+    .search-form {
+      position: relative;
+      display: flex;
+      align-items: center;
+      align-items: stretch;
+      margin-top: 20px;
+
+      @include media-breakpoint-up(lg) {
+        margin-top: 0;
+      }
+
+      input {
+        padding-left: 3.5rem;
+        background: none;
+        border: 0;
+        border-left: solid 1px $background;
+        border-top: solid 1px $background;
+        color: $primary;
+        background-color: $background;
+        border-bottom: solid 1px $primary;
+        @include media-breakpoint-up(lg) {
+          padding-left: 2rem;
+          border-top: 0;
+        }
+      }
+
+      label {
+        margin-bottom: 0;
+        border: none;
+        font-size: 0;
+        width: 60px;
+        border-bottom: 0;
+        border-right: 0;
+        padding: 10px 15px;
+
+        &:before {
+          font-family: "Font Awesome 5 Pro";
+          font-weight: 900;
+          content: "\f002";
+          color: $background;
+          font-size: 1.2rem;
+
+        }
+
+      }
+
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.search-results {
+  .page-hero {
+    @include make-container(small, true);
+  }
+  form {
+    @include make-container(small, true);
+    padding-bottom: $container-padding-small;
+  }
+}

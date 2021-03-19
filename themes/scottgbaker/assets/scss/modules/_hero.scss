@@ -1,0 +1,14 @@
+.page-hero {
+  @include make-container;
+  padding-top: $grid-gutter-width;
+  padding-bottom: $grid-gutter-width;
+  @include media-breakpoint-up(md) {
+    padding-top: $container-padding-small;
+    padding-bottom: $container-padding-small;
+  
+  }
+  @include media-breakpoint-up(lg) {
+    padding-top: $container-padding;
+    padding-bottom: $container-padding;
+  }
+}

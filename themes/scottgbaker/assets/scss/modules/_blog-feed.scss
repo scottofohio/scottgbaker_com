@@ -1,0 +1,111 @@
+
+
+
+.blog-feed {
+  @include make-container();
+  padding-bottom: $grid-gutter-width;
+  > .card {
+    margin-bottom: $grid-gutter-width;
+  }
+  @include media-breakpoint-up(md) {
+    > .card {
+      margin-bottom: 0;
+    }
+    padding-bottom: $container-padding-small;
+    @include make-row(12); 
+    > .card {
+      &:nth-child(odd) {
+        @include make-col(1,6,6);
+      }
+      &:nth-child(even) {
+        @include make-col(7,6,6);
+      }
+      
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    
+    padding-bottom: $container-padding;
+    
+  }
+
+}
+
+
+.single-blog {
+  @include make-container;
+  padding-top: $grid-gutter-width;
+  padding-bottom: $grid-gutter-width;
+
+  @include media-breakpoint-up(md) {
+   padding-top:  $container-padding-small;
+   padding-bottom:  $container-padding-small;
+   @include make-row(12);
+   .comments-wrap {
+     padding-top: $container-padding-small
+   }
+   > aside {
+ 
+      > nav {
+        > ul {
+          >li {
+            &:first-child {
+              > a {
+                padding-top: 0;
+              }
+            }
+            &:last-child {
+              > a {
+                padding-bottom: 0;
+                border-bottom: 0;
+              }
+            }
+            > a {
+              padding-top: 15px;
+              padding-bottom: 15px;
+              display: block;
+              border-bottom: solid 1px $rules;
+              text-decoration: none;
+              line-height: 1;
+              font-size: 1.25rem;
+              font-family: $header-font-alternate;
+              &:hover {
+                color: $primary;
+              }
+            }
+          }
+        }
+      }
+   }
+   > header {
+
+    @include make-col(1,12,12);
+    grid-row: 1
+  }
+   > .post-content {
+     @include make-col(5,8,8);
+     grid-row: 2;
+   }
+  > aside {
+    align-self: start;
+    @include make-col(1,4,4);
+    grid-row: 2;
+   }
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding-top:  $container-padding;
+    padding-bottom:  $container-padding;
+    > header {
+      @include make-col(2,10,10);
+      padding-bottom:  $container-padding-small;
+     }
+     > .post-content {
+       @include make-col(4,6,6);
+     }
+    > aside {
+      @include make-col(2,2,2);
+     }
+  }
+  
+}

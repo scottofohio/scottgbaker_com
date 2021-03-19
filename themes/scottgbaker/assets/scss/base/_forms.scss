@@ -1,0 +1,114 @@
+// stylelint-disable selector-no-qualifying-type
+
+//
+// Textual form controls
+//
+
+input[type="text"] {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    font-size: $font-size-base;
+    line-height: 1.1;
+    color: $type_color;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: 1px solid $rules;
+    background-color: #fff;
+}
+
+.select {
+    position: relative;
+
+    .options {
+        position: absolute;
+        display: none;
+        z-index: 3;
+        list-style: none;
+        padding: 0;
+        width: 100%;
+        background: #fff;
+        border: solid 1px #ddd;
+        border-top: 0;
+
+        // padding: ;
+        > li {
+            padding: 20px;
+            border-bottom: solid 1px #ddd;
+            display: block;
+            background-color: #fff;
+
+            &:hover {}
+
+            &:last-child {
+                border-bottom: 0;
+            }
+        }
+    }
+
+    .s-hidden {
+        display: none;
+    }
+
+    .styledSelect {
+        padding: 20px;
+        border: solid 1px #ddd;
+        position: relative;
+
+        &:after {
+            content: "";
+            width: 0;
+            height: 0;
+            border: 6px solid transparent;
+            border-color: black transparent transparent transparent;
+            position: absolute;
+            top: 4px;
+            bottom: 0;
+            margin: auto;
+            right: 20px;
+        }
+    }
+}
+
+/*-------------------------------------------------------*\
+    FORMS
+/*-------------------------------------------------------*/
+
+%select-styles {
+    // @include prefixer(appearance, none);
+
+    padding: 0 25px 0 7px;
+    background: white;
+    border: 1px solid $primary;
+    border-radius: 0;
+    outline: none;
+    color: $primary;
+    line-height: 1.4;
+
+    // text-indent: 0.01px;
+    // text-overflow: '';
+    position: relative;
+    width: 100%;
+    min-height: 39px;
+}
+
+input {
+    &[type="search"] {
+        -webkit-appearance: searchfield !important;
+
+        &::-webkit-search-cancel-button {
+            -webkit-appearance: searchfield-cancel-button !important;
+        }
+    }
+}
+
+
+// /* Re-Captcha
+// .gglcptch_recaptcha {
+//     > * {
+//         @include media-breakpoint-down(md) {
+//             margin-left: auto;
+//             margin-right: auto;
+//         }
+//     }
+// }

@@ -1,0 +1,51 @@
+a {
+  color: $link_color;
+  
+  &:hover {
+    text-decoration: none;
+    text-decoration: underline;
+  }
+  
+}
+a.cat-tag {
+  display: inline-block;
+  padding: 9px 15px;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  @include prefixer('transition', '.25s ease all');
+  &:hover {
+    @include prefixer('transition', '.25s ease all');
+  }
+}
+
+.text-cta {
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-underline-position: under;
+  
+  @include media-breakpoint-up(md) {
+    transition: all .2s ease-in-out;
+  }
+
+  &:after {
+    content: " →";
+    // position: relative;
+    // padding-left: 0;
+    // transition: all .2s ease-in-out;
+  }
+  &.alt-arrow {
+    &:after {
+       content: " ↗ ";
+    }
+  }
+  &:hover {
+    color: $rules;
+    &:after {
+      color: $primary;
+      // padding-left: 3.5px;
+    }
+  }
+}

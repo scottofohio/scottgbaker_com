@@ -1,0 +1,11 @@
+###########
+## Common
+###########
+*.bak
+ignore/
+Desktop.in
+*Thumbs.db
+*.DS_Store
+*~imageoptim*
+uploads
+.htaccess

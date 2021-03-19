@@ -1,0 +1,272 @@
+/*-------------------------------------------------------*\
+    Frontend Admin User Interface
+/*-------------------------------------------------------*/
+
+// body {
+//     &.hide-admin-bar {
+//         #wpadminbar {
+//             // overflow: hidden;
+//             top: -29px;
+//             transition: top .35s ease;
+
+//             &:after {
+//                 content: '';
+//                 display: block;
+//                 position: fixed;
+//                 width: 100%;
+//                 top: 0;
+//                 left: 0;
+//                 height: 12px;
+//             }
+
+//             &:hover {
+//                 top: 0 !important;
+//                 opacity: 1;
+//                 overflow: visible;
+
+//                 &:after {
+//                     height: 0;
+//                 }
+//             }
+
+//             #wp-admin-bar-edit {
+//                 a {
+//                     &:after {
+//                         content: '';
+//                         display: block;
+//                         position: absolute;
+//                         width: 100%;
+//                         // background: $admin-black;
+//                         height: 20px;
+//                         width: auto;
+//                         content: '\f0c9';
+//                         font-family: fontawesome;
+//                         padding: 5px 12px;
+//                         text-align: center;
+//                         line-height: normal;
+//                         height: auto;
+//                         border-radius: 0 0 6px 6px;
+//                         left: 1px;
+//                         position: fixed;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// div#wpadminbar:hover {
+//   background-color: black;
+// }
+
+// #wpadminbar a.ab-item {color: inherit;cursor: pointer;}
+
+// html div#wpadminbar {
+//   top: -29px!important;
+//   opacity: 0.8;
+//   background: black;
+//   overflow: visible;
+// }
+
+// #wpadminbar ul#wp-admin-bar-root-default>li#wp-admin-bar-wp-logo {
+//   top: 32px;
+//   background: black;
+//   color: white;
+//   margin-left: 0px;
+//   border-radius: 0 0 4px 4px;
+// }
+
+// ul#wp-admin-bar-root-default {
+//   overflow: visible;
+// }
+
+// div#wp-toolbar {
+//   overflow: visible;
+// }
+
+// #wpadminbar #adminbarsearch:before, #wpadminbar .ab-icon:before, #wpadminbar .ab-item:before {
+//   color: inherit;
+// }
+
+// #wpadminbar:hover ul#wp-admin-bar-root-default>li#wp-admin-bar-wp-logo {
+//   top: 0;
+//   border-radius: 0;
+//   color: inherit;
+//   transition: all .3s ease;
+// }
+
+// html {
+//     #wpadminbar {
+//         overflow: hidden;
+
+//         &:hover {
+//             overflow: visible;
+//         }
+//     }
+//     &.admin-bar-present {
+//         margin-top: 0 !important;
+//     }
+//     #wpadminbar {
+//         opacity: 0.3;
+//         top: -29px;
+//         transition: top .35s ease;
+//         transition-property: top opacity background-color;
+//         @include media-breakpoint-down(md) {
+//             top: -40px !important;
+//             opacity: 0;
+//         }
+
+//         &:hover {
+//             top: 0 !important;
+//             opacity: 1;
+//             // background-color: rgba($primary-color, 0.65) !important;
+//         }
+
+//         &:after {
+//             content: '';
+//             opacity: 0;
+//             height: 15px;
+//             width: 100%;
+//             left: 0;
+//             position: fixed;
+//             top: 0;
+//             cursor: pointer;
+//         }
+//     }
+// }
+
+// html {
+//     #wpadminbar {
+//         overflow: hidden;
+
+//         &:hover {
+//             overflow: visible;
+//         }
+//     }
+//     &.admin-bar-present {
+//         margin-top: 0 !important;
+//     }
+//     #wpadminbar {
+//         opacity: 0.3;
+//         top: -29px;
+//         transition: top .35s ease;
+//         transition-property: top opacity background-color;
+//         @include media-breakpoint-down(md) {
+//             top: -40px !important;
+//             opacity: 0;
+//         }
+
+//         &:hover {
+//             top: 0 !important;
+//             opacity: 1;
+//         }
+
+//         &:after {
+//             content: '';
+//             opacity: 0;
+//             height: 15px;
+//             width: 100%;
+//             left: 0;
+//             position: fixed;
+//             top: 0;
+//             cursor: pointer;
+//         }
+//     }
+// }
+
+// /*-------------------------------------------------------*\
+//     Front-End Admin Styles
+// /*-------------------------------------------------------*/
+
+
+// html {
+//     #wpadminbar {
+//         overflow: hidden;
+
+//         &:hover {
+//             overflow: visible;
+//         }
+//     }
+//     &.admin-bar-present {
+//         margin-top: 0 !important;
+//     }
+//     #wpadminbar {
+//         opacity: 0.3;
+//         top: -29px;
+//         transition: top .35s ease;
+//         transition-property: top opacity background-color;
+//         @include media-breakpoint-down(md) {
+//             top: -40px !important;
+//             opacity: 0;
+//         }
+
+//         &:hover {
+//             top: 0 !important;
+//             opacity: 1;
+//         }
+
+//         &:after {
+//             content: '';
+//             opacity: 0;
+//             height: 15px;
+//             width: 100%;
+//             left: 0;
+//             position: fixed;
+//             top: 0;
+//             cursor: pointer;
+//         }
+//     }
+// }
+
+// body {
+//     &.hide-admin-bar {
+//         #wpadminbar {
+//             // overflow: hidden;
+//             top: -29px;
+//             transition: top .35s ease;
+
+//             &:after {
+//                 content: '';
+//                 display: block;
+//                 position: fixed;
+//                 width: 100%;
+//                 top: 0;
+//                 left: 0;
+//                 height: 12px;
+//             }
+
+//             &:hover {
+//                 top: 0 !important;
+//                 opacity: 1;
+//                 overflow: visible;
+
+//                 &:after {
+//                     height: 0;
+//                 }
+//             }
+
+//             #wp-admin-bar-edit {
+//                 a {
+//                     &:after {
+//                         content: '';
+//                         display: block;
+//                         position: absolute;
+//                         width: 100%;
+//                         // background: $admin-black;
+//                         height: 20px;
+//                         width: auto;
+//                         content: '\f0c9';
+//                         font-family: fontawesome;
+//                         padding: 5px 12px;
+//                         text-align: center;
+//                         line-height: normal;
+//                         height: auto;
+//                         border-radius: 0 0 6px 6px;
+//                         left: 1px;
+//                         position: fixed;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }

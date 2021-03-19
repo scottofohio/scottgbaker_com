@@ -1,0 +1,76 @@
+//
+// Site Footer
+//
+
+.site-footer {
+  background-color: $primary;
+
+  >div {
+    @include make-container;
+    padding-top: $grid-gutter-width;
+    padding-bottom: $grid-gutter-width;
+    p {
+      color: $background;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      @include media-breakpoint-up(md) {
+        text-align: left;
+      }
+    }
+    .search-form {
+      margin-bottom: 30px;
+      @include media-breakpoint-up(md) {
+        margin-bottom: 0;
+      } 
+      form {
+        display: flex;
+        width: 100%;;
+        button {
+          border: none;
+          background-color: transparent;
+          color: $button_color;
+          border-bottom: solid 1px $border_color;
+        }
+        input {
+          border-left: 0;
+          border-right: 0;
+          border-top: 0;
+          color: $background;
+          padding-left: 0;
+          background-color: transparent;
+        }
+      }
+    }
+    nav {
+      
+      justify-content: center;
+      @include media-breakpoint-up(sm) {
+        display: flex;
+      }
+      a {
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+          letter-spacing: 2px;
+          color: $background;
+          font-weight: 500;
+          font-family: $header-font-alternate;
+          font-size: 1.25rem;
+          text-decoration: none;
+          padding: 20px 0 0 0 ;
+          @include media-breakpoint-up(sm) {
+            padding: 30px 30px 30px 0;
+          }
+          @include media-breakpoint-up(md) {
+            padding: 0 30px 0 0;;
+          }
+      }
+    }
+    @include media-breakpoint-up(md) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; 
+    }
+  }
+}
