@@ -11,10 +11,10 @@ uploads
 .htaccess
 node_modules
 .env
-plugins/akismet/
-plugins/hello.php
-themes/twentynineteen/
-themes/twentytwenty/
-themes/twentytwentyone/
+*plugins/akismet/
+*plugins/hello.php
+*twentynineteen/
+*twentytwenty/
+*twentytwentyone/
 letsencrypt
 certs
