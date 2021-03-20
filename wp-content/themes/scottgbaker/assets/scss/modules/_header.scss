@@ -4,16 +4,15 @@
   overflow: hidden;
 
   padding: 20px 0 0 0;
-
+  display: flex;
+  justify-content: space-between;
   @include media-breakpoint-up(lg) {
     padding: 0;
   }
 
   .hamburger {
 
-    right: 20px;
-    top: 10px;
-    top: 15px;
+  
     border: none;
    
 
@@ -23,7 +22,7 @@
 
   @include media-breakpoint-up(lg) {
     display: flex;
-    // justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 
     .logo {

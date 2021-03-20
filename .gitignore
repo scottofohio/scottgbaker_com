@@ -37,3 +37,5 @@ wp-settings.php
 wp-signup.php
 wp-trackback.php
 xmlrpc.php
+wp-content/plugins/akismet
+wp-content/plugins/hello.php

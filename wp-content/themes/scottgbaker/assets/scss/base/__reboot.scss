@@ -9,13 +9,17 @@
 body {
   margin: 0;
   text-rendering: geometricPrecision;
-  font-size: $font-size-base;
+  
   background:  $background;
   font-family: $font-family-base, sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   color: $type_color;
-  line-height: 1.6;
+  line-height: 1.5;
+  font-size: 1rem;
+  @include media-breakpoint-up(md) {
+    font-size: $font-size-base;
+  };
 
   @include prefixer(font-smoothing, antialiased);
 
