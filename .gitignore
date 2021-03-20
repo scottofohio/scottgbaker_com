@@ -16,3 +16,5 @@ plugins/hello.php
 themes/twentynineteen/
 themes/twentytwenty/
 themes/twentytwentyone/
+letsencrypt
+certs
