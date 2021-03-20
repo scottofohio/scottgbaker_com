@@ -8,13 +8,13 @@ Project.searchOptions = function() {
     $(this).remove();
     e.preventDefault();
     
-    $('.page-content').addClass('loading');
+    $('.blog-feed').addClass('loading');
     url = $(this).attr('href');
 
     $.get(url, function(data){
-      $('.page-content').append($(data).find('.page-content article'));
-      $('.page-content').append($(data).find('.page-content .post-nav'));
-      $('.page-content').removeClass('loading');
+      $('.blog-feed').append($(data).find('.page-content article'));
+      $('.blog-feed').append($(data).find('.page-content .post-nav'));
+      $('.blog-feed').removeClass('loading');
     });
 
   });

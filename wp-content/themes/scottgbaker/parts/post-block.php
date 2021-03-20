@@ -7,9 +7,9 @@ $post_cats = get_the_category($post->ID); ?>
     <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
     <?php the_excerpt(); ?>
       <nav class="categories">
-        <h5 class="accent label ">Categories</h5><?php 
+        <h5 class="accent ">Categories</h5><?php 
         foreach( $post_cats as $cat) :  
-          echo '<a href="/category/' . $cat->slug . '">' . $cat->name . '</a>';
+          echo '<a class="accent" href="/category/' . $cat->slug . '">' . $cat->name . '</a>';
         endforeach; ?>
       </nav>
 

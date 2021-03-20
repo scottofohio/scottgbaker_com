@@ -19,10 +19,14 @@ $other_posts = new WP_Query(array('posts_per_page'=>5, 'post__not_in' =>array($p
     <header>
       <h5 class="date-tag"><?php the_date(); ?></h5>
       <h1><?php the_title(); ?></h1>
-      <nav class="categories"><?php 
-        foreach( $post_cats as $cat) :  
-          echo '<a href="/category/' . $cat->slug . '">' . $cat->name . '</a>';
-        endforeach; ?>
+      <nav class="categories">
+        <h5 class="accent">Categories:</h5>
+        <?php 
+          
+          foreach( $post_cats as $cat) :
+           
+            echo '<a class="accent" href="/category/' . $cat->slug . '">' . $cat->name . '</a>';
+          endforeach; ?>
       </nav>
     </header>
     <div class="post-content">
@@ -49,9 +53,8 @@ $other_posts = new WP_Query(array('posts_per_page'=>5, 'post__not_in' =>array($p
 </article>
 
 <nav class="post-nav">
-<?php previous_post_link(); ?> 
-<?php next_post_link(); ?>
-
+  <?php previous_post_link($format = '<span> <i class="fas fa-angle-double-left"></i> %link</span>'); ?> 
+  <?php next_post_link('<span> %link <i class="fas fa-angle-double-right"></i> </span>'); ?>
 </nav>
 
 

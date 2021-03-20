@@ -90,7 +90,7 @@ function my_post_nav_links() {
 add_filter('next_posts_link_attributes', 'posts_link_attributes');
 
 function posts_link_attributes() {
-  return 'class="btn btn-primary"';
+  return 'class="button"';
 }
 
 
@@ -99,7 +99,7 @@ function load_more_posts_link() {
   if ( $next = get_next_posts_link( __( 'Load More' ) ) ) {
     $nav .= sprintf( '%s', $next );
   }
-  return ( $nav ? sprintf( '<nav class="post-nav load-more-posts">%s</nav>', $nav ) : '' );
+  return ( $nav ? sprintf( '<nav class="load-more-posts">%s</nav>', $nav ) : '' );
 }
 
 /**
@@ -128,3 +128,4 @@ function breadcrumbs() {
     echo '</nav>';
   }
 }
+

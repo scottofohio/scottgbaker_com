@@ -5,12 +5,14 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: $grid-gutter-width;
-  @include media-breakpoint-up(md) {
-    padding: $grid-gutter-width * 1.5;
-  }
-  @include media-breakpoint-up(lg) {
-    padding: $grid-gutter-width * 3;
+  > section {
+    padding: $grid-gutter-width;
+    @include media-breakpoint-up(md) {
+      padding: $grid-gutter-width * 1.5;
+    }
+    @include media-breakpoint-up(lg) {
+      padding: 90px 90px 30px 90px;
+    }
   }
 
   h2 {
@@ -22,24 +24,23 @@
   .categories {
     display: flex;
     align-items: center;
-    padding: $grid-gutter-width 0;
+    padding: 15px 0 0 0;
     margin-bottom: $grid-gutter-width;
-    margin-top: $grid-gutter-width;
-    border-top: solid 1px $rules;
-    border-bottom: solid 1px $rules;
-    h5, a {
-      font-size: $font-size-medium;
-      font-family: $header-font-alternate;
-      margin: 0;
-      padding-right: 20px;
+    
+    > a {
+      text-decoration: none;
+      padding-left: 15px;
     }
-    a {
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      font-weight: 500;;
+    h5 {
+      padding: 0;
+      margin: 0;
+      
     }
   }
   .button {
     display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
+

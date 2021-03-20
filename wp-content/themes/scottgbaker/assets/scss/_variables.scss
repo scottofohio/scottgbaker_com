@@ -25,8 +25,9 @@ $grid-breakpoints: (
 
   // Color Variables
   $primary: #202223;
-  $button_color: #45ED95;
-  $link_color: #EE5646;
+  $link_color: #5052F0;
+  $button_color: $link_color;
+
   $type_color: $primary;
   $background: #FCFAE9;
   $rules: #efefef;
@@ -43,7 +44,7 @@ $grid-breakpoints: (
   $header-font-alternate: "roc-grotesk-condensed", Helvetica, Arial, sans-serif;
   $font-family-base: $header-font;
   $font-size-small: .75rem;
-  $font-size-base: 1.1rem;
+  $font-size-base: 1.15rem;
   $font-size-medium: 1.25rem;
   $font-size-large: 1.5rem;
   $font-size-x-large: 2rem;
@@ -54,7 +55,7 @@ $grid-breakpoints: (
   $h1-font-size-small: 3.25rem;
 
   $h2-font-size: 3rem;
-  $h2-font-size-small: 2.5rem;
+  $h2-font-size-small: 2.25rem;
 
   $h3-font-size: 2rem;
   $h3-font-size-small: 1.5rem;
